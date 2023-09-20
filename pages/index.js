@@ -1,7 +1,15 @@
-import React from 'react'
-import Head from 'next/head'
+import React from "react";
+import Head from "next/head";
+import {
+  ConnectWallet,
+  useAddress,
+  useUser,
+  useLogin,
+  useLogout,
+  useMetamask,
+} from "@thirdweb-dev/react";
 
-import Link from '../components/link'
+import Link from "../components/link";
 
 const Home = (props) => {
   return (
@@ -47,7 +55,7 @@ const Home = (props) => {
                 </div>
               </a>
               <button className="home-button start-button button">
-                <span className="home-text04">CONNECT</span>
+                <ConnectWallet />
               </button>
             </div>
             <div data-thq="thq-burger-menu" className="home-burger-menu">
@@ -93,9 +101,7 @@ const Home = (props) => {
                     <span className="nav-link">📌ROADMAP</span>
                     <span className="nav-link">🎭ORDINALS</span>
                   </div>
-                  <button className="start-button button home-button2">
-                    <span className="home-text08">CONNECT</span>
-                  </button>
+                  <ConnectWallet />
                 </div>
               </div>
             </div>
@@ -899,7 +905,7 @@ const Home = (props) => {
             align-items: center;
             background-size: cover;
             justify-content: center;
-            background-image: url('/dtfcv-1500w.png');
+            background-image: url("/dtfcv-1500w.png");
             background-position: center;
           }
           .home-button3 {
@@ -3098,7 +3104,7 @@ const Home = (props) => {
         `}
       </style>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
