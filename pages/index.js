@@ -54,9 +54,14 @@ const Home = (props) => {
                   <span className="home-text03 nav-link">ROADMAP</span>
                 </div>
               </a>
-              <button className="home-button start-button button">
-                <ConnectWallet />
-              </button>
+              <ConnectWallet
+                style={{
+                  background: "black",
+                  color: "white",
+                  border: "solid",
+                  borderColor: "white",
+                }}
+              />
             </div>
             <div data-thq="thq-burger-menu" className="home-burger-menu">
               <button className="home-button1 button">
@@ -101,7 +106,14 @@ const Home = (props) => {
                     <span className="nav-link">📌ROADMAP</span>
                     <span className="nav-link">🎭ORDINALS</span>
                   </div>
-                  <ConnectWallet />
+                  <ConnectWallet
+                    style={{
+                      background: "black",
+                      color: "white",
+                      border: "solid",
+                      borderColor: "white",
+                    }}
+                  />
                 </div>
               </div>
             </div>
