@@ -150,7 +150,7 @@ const NavbarInteractive = (props) => {
           }
           .navbar-interactive-navbar-interactive {
             width: 90%;
-            height: 80px;
+            height: 100px;
             display: flex;
             position: fixed;
             max-width: 90%;
@@ -373,7 +373,7 @@ const NavbarInteractive = (props) => {
           @media (max-width: 991px) {
             .navbar-interactive-navbar-interactive {
               width: 90%;
-              height: 130px;
+              height: 100px;
               display: flex;
               position: fixed;
               max-width: 90%;
@@ -503,7 +503,7 @@ const NavbarInteractive = (props) => {
           @media (max-width: 479px) {
             .navbar-interactive-navbar-interactive {
               width: 90%;
-              height: 130px;
+              height: 100px;
               display: flex;
               position: fixed;
               max-width: 90%;
