@@ -150,7 +150,7 @@ const NavbarInteractive = (props) => {
           }
           .navbar-interactive-navbar-interactive {
             width: 90%;
-            height: 130px;
+            height: 80px;
             display: flex;
             position: fixed;
             max-width: 90%;
@@ -316,7 +316,7 @@ const NavbarInteractive = (props) => {
             display: flex;
             align-items: center;
             margin-top: 10%;
-            margin-left: 10%;
+            margin-left: 20%;
             margin-bottom: var(--dl-space-space-threeunits);
             justify-content: space-between;
           }
