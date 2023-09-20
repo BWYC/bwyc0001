@@ -66,7 +66,7 @@ const Home = (props) => {
             <div data-thq="thq-burger-menu" className="home-burger-menu">
               <button className="home-button1 button">
                 <img alt="image" src="/hamburger.svg" className="home-image" />
-                <span className="home-text05">Start a project</span>
+                <span className="home-text05"></span>
               </button>
             </div>
             <div data-thq="thq-mobile-menu" className="home-mobile-menu">
@@ -151,12 +151,33 @@ const Home = (props) => {
               </div>
             </div>
           </div>
+
           <p className="home-description">
             Cross-Chain NFT Community on EVM and BITCOIN as Ordinals. Members
             have access to Whaleverse. Mint Whalecards or #Whale NFT on
             Youngparrot to join the club. 
           </p>
         </header>
+        <a
+          href="https://scan.coredao.org/token/0x0c9d4b90771aca4b3e541924545e36104751dada"
+          target="_blank"
+          rel="noreferrer noopener"
+          style={{
+            margin: "4%",
+            borderBottom: "solid",
+            borderColor: "white",
+            borderWidth: "1px",
+            padding: "1%",
+            borderRadius: "8px",
+          }}
+        >
+          <span
+            className="home-text49"
+            style={{ alignContent: "center", display: "flex" }}
+          >
+            VIEW GALLERY
+          </span>
+        </a>
         <div className="home-video">
           <div className="home-container05">
             <button className="home-button3 start-button button">
@@ -362,9 +383,21 @@ const Home = (props) => {
               href="https://scan.coredao.org/token/0x0c9d4b90771aca4b3e541924545e36104751dada"
               target="_blank"
               rel="noreferrer noopener"
-              className="home-link09 start-button button"
+              style={{
+                margin: "4%",
+                borderBottom: "solid",
+                borderColor: "white",
+                borderWidth: "1px",
+                padding: "1%",
+                borderRadius: "16px",
+              }}
             >
-              <span className="home-text19">VIEW ON CORESCAN</span>
+              <span
+                className="home-text49"
+                style={{ alignContent: "center", display: "flex" }}
+              >
+                VIEW ON CORESCAN
+              </span>
             </a>
           </div>
           <div className="home-container12">
