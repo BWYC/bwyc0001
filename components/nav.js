@@ -1,6 +1,7 @@
-import React from 'react'
+import React from "react";
 
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
+import { ConnectWallet } from "@thirdweb-dev/react";
 
 const NavbarInteractive = (props) => {
   return (
@@ -64,9 +65,7 @@ const NavbarInteractive = (props) => {
                 </span>
               </div>
             </a>
-            <button className="navbar-interactive-button start-button button">
-              <span className="navbar-interactive-text4">{props.text4}</span>
-            </button>
+            <ConnectWallet />
           </div>
           <div
             data-thq="thq-burger-menu"
@@ -128,12 +127,16 @@ const NavbarInteractive = (props) => {
                   </a>
                   <span className="nav-link">{props.text8}</span>
                   <span className="nav-link">{props.text9}</span>
+                  <ConnectWallet
+                    style={{
+                      color: "white",
+                      borderColor: "white",
+                      borderWidth: "1px",
+                      border: "solid",
+                      background: "transparent",
+                    }}
+                  />
                 </div>
-                <button className="start-button button navbar-interactive-button2">
-                  <span className="navbar-interactive-text8">
-                    {props.text10}
-                  </span>
-                </button>
               </div>
             </div>
           </div>
@@ -348,6 +351,7 @@ const NavbarInteractive = (props) => {
             display: flex;
             align-items: flex-start;
             flex-direction: column;
+            margin-top: "10%";
           }
           .navbar-interactive-links1 {
             gap: var(--dl-space-space-threeunits);
@@ -366,25 +370,25 @@ const NavbarInteractive = (props) => {
           }
           @media (max-width: 991px) {
             .navbar-interactive-navbar-interactive {
-                width: 90%;
-                height: 130px;
-                display: flex;
-                position: fixed;
-                max-width: 90%;
-                margin-left: 5%;
-                align-items: center;
-                padding-top: var(--dl-space-space-twounits);
-                border-color: #ffffff;
-                border-width: 1px;
-                border-radius: var(--dl-radius-radius-radius8);
-                padding-right: var(--dl-space-space-oneandhalfunits);
-                backdrop-filter: blur(10px);
-                justify-content: space-between;
-                background-color: rgba(6, 6, 6, 0.17);
-                border-top-width: 0px;
-                border-left-width: 0px;
-                border-right-width: 0px;
-                border-bottom-width: 1px;
+              width: 90%;
+              height: 130px;
+              display: flex;
+              position: fixed;
+              max-width: 90%;
+              margin-left: 5%;
+              align-items: center;
+              padding-top: var(--dl-space-space-twounits);
+              border-color: #ffffff;
+              border-width: 1px;
+              border-radius: var(--dl-radius-radius-radius8);
+              padding-right: var(--dl-space-space-oneandhalfunits);
+              backdrop-filter: blur(10px);
+              justify-content: space-between;
+              background-color: rgba(6, 6, 6, 0.17);
+              border-top-width: 0px;
+              border-left-width: 0px;
+              border-right-width: 0px;
+              border-bottom-width: 1px;
             }
             .navbar-interactive-branding {
               width: 149px;
@@ -496,25 +500,25 @@ const NavbarInteractive = (props) => {
           }
           @media (max-width: 479px) {
             .navbar-interactive-navbar-interactive {
-                width: 90%;
-                height: 130px;
-                display: flex;
-                position: fixed;
-                max-width: 90%;
-                margin-left: 3%;
-                align-items: center;
-                padding-top: var(--dl-space-space-twounits);
-                border-color: #ffffff;
-                border-width: 1px;
-                border-radius: var(--dl-radius-radius-radius8);
-                padding-right: var(--dl-space-space-oneandhalfunits);
-                backdrop-filter: blur(10px);
-                justify-content: space-between;
-                background-color: rgba(6, 6, 6, 0.17);
-                border-top-width: 0px;
-                border-left-width: 0px;
-                border-right-width: 0px;
-                border-bottom-width: 1px;
+              width: 90%;
+              height: 130px;
+              display: flex;
+              position: fixed;
+              max-width: 90%;
+              margin-left: 3%;
+              align-items: center;
+              padding-top: var(--dl-space-space-twounits);
+              border-color: #ffffff;
+              border-width: 1px;
+              border-radius: var(--dl-radius-radius-radius8);
+              padding-right: var(--dl-space-space-oneandhalfunits);
+              backdrop-filter: blur(10px);
+              justify-content: space-between;
+              background-color: rgba(6, 6, 6, 0.17);
+              border-top-width: 0px;
+              border-left-width: 0px;
+              border-right-width: 0px;
+              border-bottom-width: 1px;
             }
             .navbar-interactive-logo {
               width: 83px;
@@ -566,31 +570,31 @@ const NavbarInteractive = (props) => {
         `}
       </style>
     </>
-  )
-}
+  );
+};
 
 NavbarInteractive.defaultProps = {
-  Logo_src: '/favicon-200h.png',
-  Logo_alt: 'image',
-  Company: 'BWYC',
-  text: 'HOME',
-  text1: 'WHALECARD',
-  text2: 'ORDINALS\n',
-  text3: 'ROADMAP',
-  text4: 'CONNECT',
-  image_src: '/hamburger.svg',
-  image_alt: 'image',
-  text5: 'Start a project',
-  Logo_src1: '/favicon-200h.png',
-  Logo_alt1: 'image',
-  Company1: 'BWYC',
-  text6: '🪸HOME',
-  link_text: '/',
-  text7: '🎴WHALECARDS',
-  text8: '📌ROADMAP',
-  text9: '🎭ORDINALS',
-  text10: 'CONNECT',
-}
+  Logo_src: "/favicon-200h.png",
+  Logo_alt: "image",
+  Company: "BWYC",
+  text: "HOME",
+  text1: "WHALECARD",
+  text2: "ORDINALS\n",
+  text3: "ROADMAP",
+  text4: "CONNECT",
+  image_src: "/hamburger.svg",
+  image_alt: "image",
+  text5: "Start a project",
+  Logo_src1: "/favicon-200h.png",
+  Logo_alt1: "image",
+  Company1: "BWYC",
+  text6: "🪸HOME",
+  link_text: "/",
+  text7: "🎴WHALECARDS",
+  text8: "📌ROADMAP",
+  text9: "🎭ORDINALS",
+  text10: "CONNECT",
+};
 
 NavbarInteractive.propTypes = {
   Logo_src: PropTypes.string,
@@ -613,6 +617,6 @@ NavbarInteractive.propTypes = {
   text8: PropTypes.string,
   text9: PropTypes.string,
   text10: PropTypes.string,
-}
+};
 
-export default NavbarInteractive
+export default NavbarInteractive;
