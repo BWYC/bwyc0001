@@ -259,15 +259,15 @@ const Home = (props) => {
             <div className="home-statistic-list">
               <div className="home-statistic">
                 <span className="home-sta">MINTED WHALES</span>
-                <span className="home-sta01">4,503</span>
+                <span className="home-sta01">4,505</span>
               </div>
               <div className="home-statistic1">
                 <span className="home-sta02">HOLDERS</span>
-                <span className="home-sta03">93</span>
+                <span className="home-sta03">95</span>
               </div>
               <div className="home-statistic2">
                 <span className="home-sta04">TRANSFERS</span>
-                <span className="home-sta05">9,871</span>
+                <span className="home-sta05">9,876</span>
               </div>
               <div className="home-statistic3">
                 <span className="home-sta06">CLAIMED CARDS</span>
