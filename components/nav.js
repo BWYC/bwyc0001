@@ -20,12 +20,7 @@ const NavbarInteractive = (props) => {
             <span className="navbar-interactive-company">{props.Company}</span>
           </div>
           <div className="navbar-interactive-items">
-            <a
-              href="/"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="navbar-interactive-link"
-            >
+            <div rel="noreferrer noopener" className="navbar-interactive-link">
               <div className="navbar-interactive-links">
                 <svg
                   viewBox="0 0 1024 1024"
@@ -33,9 +28,9 @@ const NavbarInteractive = (props) => {
                 >
                   <path d="M1024 590.444l-512-397.426-512 397.428v-162.038l512-397.426 512 397.428zM896 576v384h-256v-256h-256v256h-256v-384l384-288z"></path>
                 </svg>
-                <span className="navbar-interactive-text nav-link">
+                <a href="/" className="navbar-interactive-text nav-link">
                   {props.text}
-                </span>
+                </a>
                 <svg
                   viewBox="0 0 1024 1024"
                   className="navbar-interactive-icon02"
@@ -43,7 +38,7 @@ const NavbarInteractive = (props) => {
                   <path d="M817.57 348.15c-193.566-143.858-260.266-259.018-305.566-348.148v0c-0.004 0-0.004-0.002-0.004-0.002v0.002c-45.296 89.13-112 204.292-305.566 348.148-330.036 245.286-19.376 587.668 253.758 399.224-17.796 116.93-78.53 202.172-140.208 238.882v37.744h384.032v-37.74c-61.682-36.708-122.41-121.954-140.212-238.884 273.136 188.446 583.8-153.94 253.766-399.226z"></path>
                 </svg>
                 <span className="navbar-interactive-text1 nav-link">
-                  {props.text1}
+                  <a href="#mint">WHALECARD</a>
                 </span>
                 <svg
                   viewBox="0 0 760.0274285714286 1024"
@@ -60,11 +55,14 @@ const NavbarInteractive = (props) => {
                 >
                   <path d="M997.143 169.714c7.429 7.429 7.429 18.857 0 26.286l-80.571 80.571c-10.286 10.286-24.571 16-38.857 16h-768c-20 0-36.571-16.571-36.571-36.571v-146.286c0-20 16.571-36.571 36.571-36.571h329.143v-36.571c0-20 16.571-36.571 36.571-36.571h73.143c20 0 36.571 16.571 36.571 36.571v36.571h292.571c14.286 0 28.571 5.714 38.857 16zM438.857 694.857h146.286v292.571c0 20-16.571 36.571-36.571 36.571h-73.143c-20 0-36.571-16.571-36.571-36.571v-292.571zM914.286 438.857c20 0 36.571 16.571 36.571 36.571v146.286c0 20-16.571 36.571-36.571 36.571h-768c-14.286 0-28.571-5.714-38.857-16l-80.571-80.571c-7.429-7.429-7.429-18.857 0-26.286l80.571-80.571c10.286-10.286 24.571-16 38.857-16h292.571v-109.714h146.286v109.714h329.143z"></path>
                 </svg>
-                <span className="navbar-interactive-text3 nav-link">
+                <a
+                  href="#roadmap"
+                  className="navbar-interactive-text3 nav-link"
+                >
                   {props.text3}
-                </span>
+                </a>
               </div>
-            </a>
+            </div>
             <ConnectWallet
               style={{
                 background: "black",
