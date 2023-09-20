@@ -302,7 +302,42 @@ const Home = (props) => {
                 VIEW ON CORESCAN
               </span>
             </a>
+            <h2 style={{ color: "white" }}>WHALECARDS</h2>
+            <h6
+              style={{
+                color: "grey",
+                fontSize: "18px",
+                fontFamily: "courier",
+                width: "60%",
+                marginTop: "5",
+              }}
+            >
+              Whalecards are pass to WHALEVERSE [A GATED SERVER WITH EXCLUSIVE
+              FEATURES]. Members can also stake Cards to earn $WHLS or trade
+              them on our own marketplace
+            </h6>
+            <a
+              href="https://marketplace.boredwhalesyachtclub.org"
+              target="_blank"
+              rel="noreferrer noopener"
+              style={{
+                margin: "4%",
+                borderBottom: "solid",
+                borderColor: "white",
+                borderWidth: "1px",
+                padding: "1.5%",
+                borderRadius: "4px",
+              }}
+            >
+              <span
+                className="home-text49"
+                style={{ alignContent: "center", display: "flex" }}
+              >
+                TRADE CARDS
+              </span>
+            </a>
           </div>
+
           <div className="home-container12">
             <iframe
               id="mint"
@@ -1471,7 +1506,7 @@ const Home = (props) => {
             gap: var(--dl-space-space-fiveunits);
             width: 1061px;
             display: flex;
-            max-width: 1280px;
+            max-width: 1080px;
             align-items: flex-start;
             flex-direction: column;
           }
@@ -2994,7 +3029,7 @@ const Home = (props) => {
               height: 100%;
             }
             .home-client-list {
-              width: 373px;
+              width: 300px;
             }
             .home-icon16 {
               width: 28px;
