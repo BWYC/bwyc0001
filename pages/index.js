@@ -10,117 +10,18 @@ import {
 } from "@thirdweb-dev/react";
 
 import Link from "../components/link";
+import NavbarInteractive from "../components/nav";
 
 const Home = (props) => {
   return (
     <>
+      <NavbarInteractive />
       <div className="home-container">
         <Head>
           <title>bwyc</title>
           <meta property="og:title" content="bwyc" />
         </Head>
-        <div className="home-navbar">
-          <header data-thq="thq-navbar" className="home-navbar-interactive">
-            <div className="home-branding">
-              <img alt="image" src="/favicon-200h.png" className="home-logo" />
-              <span className="home-company">BWYC</span>
-            </div>
-            <div className="home-items">
-              <a
-                href="/"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="home-link"
-              >
-                <div className="home-links">
-                  <svg viewBox="0 0 1024 1024" className="home-icon">
-                    <path d="M1024 590.444l-512-397.426-512 397.428v-162.038l512-397.426 512 397.428zM896 576v384h-256v-256h-256v256h-256v-384l384-288z"></path>
-                  </svg>
-                  <span className="home-text nav-link">HOME</span>
-                  <svg viewBox="0 0 1024 1024" className="home-icon02">
-                    <path d="M817.57 348.15c-193.566-143.858-260.266-259.018-305.566-348.148v0c-0.004 0-0.004-0.002-0.004-0.002v0.002c-45.296 89.13-112 204.292-305.566 348.148-330.036 245.286-19.376 587.668 253.758 399.224-17.796 116.93-78.53 202.172-140.208 238.882v37.744h384.032v-37.74c-61.682-36.708-122.41-121.954-140.212-238.884 273.136 188.446 583.8-153.94 253.766-399.226z"></path>
-                  </svg>
-                  <a className="home-text01 nav-link" href="#mint">
-                    WHALECARD
-                  </a>
-                  <svg
-                    viewBox="0 0 760.0274285714286 1024"
-                    className="home-icon04"
-                  >
-                    <path d="M666.857 365.714c7.429 76-24.571 121.714-74.857 147.429 83.429 20 136 69.714 125.714 181.143-13.143 138.857-116 176-263.429 184v145.714h-88v-143.429c-22.286 0-45.714 0-69.714-0.571v144h-88v-145.714c-20.571 0-41.143-0.571-62.286-0.571h-114.286l17.714-104.571c64.571 1.143 63.429 0 63.429 0 24.571 0 31.429-17.714 33.143-29.143v-229.714h9.143c-3.429-0.571-6.857-0.571-9.143-0.571v-164c-3.429-18.286-14.857-38.857-50.857-38.857 0 0 1.143-1.143-63.429 0v-93.714l121.143 0.571c17.714 0 36.571 0 55.429-0.571v-144h88v141.143c23.429-0.571 46.857-1.143 69.714-1.143v-140h88v144c113.143 9.714 202.857 44.571 212.571 148.571zM544 677.143c0-113.143-186.286-96.571-245.714-96.571v193.143c59.429 0 245.714 12.571 245.714-96.571zM503.429 405.143c0-103.429-155.429-88-205.143-88v175.429c49.714 0 205.143 11.429 205.143-87.429z"></path>
-                  </svg>
-                  <span className="home-text02 nav-link">ORDINALS</span>
-                  <svg viewBox="0 0 1024 1024" className="home-icon06">
-                    <path d="M997.143 169.714c7.429 7.429 7.429 18.857 0 26.286l-80.571 80.571c-10.286 10.286-24.571 16-38.857 16h-768c-20 0-36.571-16.571-36.571-36.571v-146.286c0-20 16.571-36.571 36.571-36.571h329.143v-36.571c0-20 16.571-36.571 36.571-36.571h73.143c20 0 36.571 16.571 36.571 36.571v36.571h292.571c14.286 0 28.571 5.714 38.857 16zM438.857 694.857h146.286v292.571c0 20-16.571 36.571-36.571 36.571h-73.143c-20 0-36.571-16.571-36.571-36.571v-292.571zM914.286 438.857c20 0 36.571 16.571 36.571 36.571v146.286c0 20-16.571 36.571-36.571 36.571h-768c-14.286 0-28.571-5.714-38.857-16l-80.571-80.571c-7.429-7.429-7.429-18.857 0-26.286l80.571-80.571c10.286-10.286 24.571-16 38.857-16h292.571v-109.714h146.286v109.714h329.143z"></path>
-                  </svg>
-                  <span className="home-text03 nav-link">ROADMAP</span>
-                </div>
-              </a>
-              <ConnectWallet
-                style={{
-                  background: "black",
-                  color: "white",
-                  border: "solid",
-                  borderColor: "white",
-                }}
-              />
-            </div>
-            <div data-thq="thq-burger-menu" className="home-burger-menu">
-              <button className="home-button1 button">
-                <img alt="image" src="/hamburger.svg" className="home-image" />
-                <span className="home-text05"></span>
-              </button>
-            </div>
-            <div data-thq="thq-mobile-menu" className="home-mobile-menu">
-              <div
-                data-thq="thq-mobile-menu-nav"
-                data-role="Nav"
-                className="home-nav"
-              >
-                <div className="home-top">
-                  <div className="home-branding1">
-                    <img
-                      alt="image"
-                      src="/favicon-200h.png"
-                      className="home-logo1"
-                    />
-                    <span className="home-company1">BWYC</span>
-                  </div>
-                  <div data-thq="thq-close-menu" className="home-menu-close">
-                    <svg viewBox="0 0 1024 1024" className="home-icon08">
-                      <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
-                    </svg>
-                  </div>
-                </div>
-                <div className="home-items1">
-                  <div className="home-links1">
-                    <a
-                      href="/"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      className="home-link01 nav-link"
-                    >
-                      🪸HOME
-                    </a>
-                    <a href="#mint" className="home-link02 nav-link">
-                      🎴WHALECARDS
-                    </a>
-                    <span className="nav-link">📌ROADMAP</span>
-                    <span className="nav-link">🎭ORDINALS</span>
-                  </div>
-                  <ConnectWallet
-                    style={{
-                      background: "black",
-                      color: "white",
-                      border: "solid",
-                      borderColor: "white",
-                    }}
-                  />
-                </div>
-              </div>
-            </div>
-          </header>
-        </div>
+
         <header className="home-hero">
           <div className="home-header">
             <h1 className="home-title"></h1>
@@ -805,15 +706,9 @@ const Home = (props) => {
           }
           .home-items1 {
             gap: var(--dl-space-space-threeunits);
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
           }
           .home-links1 {
             gap: var(--dl-space-space-threeunits);
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
           }
           .home-link01 {
             text-decoration: none;
