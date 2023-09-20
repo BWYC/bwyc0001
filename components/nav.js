@@ -316,6 +316,7 @@ const NavbarInteractive = (props) => {
             display: flex;
             align-items: center;
             margin-top: 10%;
+            margin-left: 10%;
             margin-bottom: var(--dl-space-space-threeunits);
             justify-content: space-between;
           }
