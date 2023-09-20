@@ -65,7 +65,15 @@ const NavbarInteractive = (props) => {
                 </span>
               </div>
             </a>
-            <ConnectWallet />
+            <ConnectWallet
+              style={{
+                background: "black",
+                color: "white",
+                borderColor: "orange",
+                borderWidth: "1px",
+                border: "solid",
+              }}
+            />
           </div>
           <div
             data-thq="thq-burger-menu"
@@ -150,7 +158,7 @@ const NavbarInteractive = (props) => {
           }
           .navbar-interactive-navbar-interactive {
             width: 90%;
-            height: 100px;
+            height: 110px;
             display: flex;
             position: fixed;
             max-width: 90%;
@@ -354,6 +362,7 @@ const NavbarInteractive = (props) => {
             align-items: flex-start;
             flex-direction: column;
             margin-top: "10%";
+            margin-left: 10%;
           }
           .navbar-interactive-links1 {
             gap: var(--dl-space-space-threeunits);
@@ -373,7 +382,7 @@ const NavbarInteractive = (props) => {
           @media (max-width: 991px) {
             .navbar-interactive-navbar-interactive {
               width: 90%;
-              height: 100px;
+              height: 110px;
               display: flex;
               position: fixed;
               max-width: 90%;
@@ -503,7 +512,7 @@ const NavbarInteractive = (props) => {
           @media (max-width: 479px) {
             .navbar-interactive-navbar-interactive {
               width: 90%;
-              height: 100px;
+              height: 110px;
               display: flex;
               position: fixed;
               max-width: 90%;
