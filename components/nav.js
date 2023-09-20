@@ -170,10 +170,13 @@ const NavbarInteractive = (props) => {
             backdrop-filter: blur(10px);
             justify-content: space-between;
             background-color: rgba(6, 6, 6, 0.17);
-            border-top-width: 0px;
-            border-left-width: 0px;
-            border-right-width: 0px;
+            border-top-width: 1px;
+            border-left-width: 1px;
+            border-right-width: 1px;
             border-bottom-width: 1px;
+            margin-top: 1%;
+            padding-left: 1%;
+            padding-bottom: 1%;
           }
           .navbar-interactive-branding {
             gap: var(--dl-space-space-halfunit);
@@ -199,6 +202,7 @@ const NavbarInteractive = (props) => {
             font-style: normal;
             font-weight: 500;
             margin-right: var(--dl-space-space-twounits);
+            font-family: courier;
           }
           .navbar-interactive-items {
             gap: var(--dl-space-space-threeunits);
@@ -394,9 +398,9 @@ const NavbarInteractive = (props) => {
               backdrop-filter: blur(10px);
               justify-content: space-between;
               background-color: rgba(6, 6, 6, 0.17);
-              border-top-width: 0px;
-              border-left-width: 0px;
-              border-right-width: 0px;
+              border-top-width: 1px;
+              border-left-width: 1px;
+              border-right-width: 1px;
               border-bottom-width: 1px;
             }
             .navbar-interactive-branding {
@@ -524,9 +528,9 @@ const NavbarInteractive = (props) => {
               backdrop-filter: blur(10px);
               justify-content: space-between;
               background-color: rgba(6, 6, 6, 0.17);
-              border-top-width: 0px;
-              border-left-width: 0px;
-              border-right-width: 0px;
+              border-top-width: 1px;
+              border-left-width: 1px;
+              border-right-width: 1px;
               border-bottom-width: 1px;
             }
             .navbar-interactive-logo {
