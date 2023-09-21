@@ -72,6 +72,7 @@ const Home = (props) => {
             borderWidth: "1px",
             padding: "1%",
             borderRadius: "8px",
+            padding: "15px",
           }}
         >
           <span
@@ -292,7 +293,8 @@ const Home = (props) => {
                 borderColor: "white",
                 borderWidth: "1px",
                 padding: "1%",
-                borderRadius: "16px",
+                borderRadius: "8px",
+                padding: "10px",
               }}
             >
               <span
@@ -302,7 +304,7 @@ const Home = (props) => {
                 VIEW ON CORESCAN
               </span>
             </a>
-            <h2 style={{ color: "white" }}>WHALECARDS</h2>
+            <h2 style={{ color: "white", marginBottom: "5%" }}>WHALECARDS</h2>
             <h6
               style={{
                 color: "grey",
@@ -314,7 +316,8 @@ const Home = (props) => {
             >
               Whalecards are pass to WHALEVERSE [A GATED SERVER WITH EXCLUSIVE
               FEATURES]. Members can also stake Cards to earn $WHLS or trade
-              them on our own marketplace
+              them on our own marketplace. Cards have a supply of 1000 and can
+              only be claimed 50 per address.
             </h6>
             <a
               href="https://marketplace.boredwhalesyachtclub.org"
@@ -326,7 +329,7 @@ const Home = (props) => {
                 borderColor: "white",
                 borderWidth: "1px",
                 padding: "1.5%",
-                borderRadius: "4px",
+                borderRadius: "8px",
               }}
             >
               <span
@@ -336,6 +339,7 @@ const Home = (props) => {
                 TRADE CARDS
               </span>
             </a>
+            
           </div>
 
           <div className="home-container12">
@@ -756,12 +760,17 @@ const Home = (props) => {
           }
           .home-hero {
             width: 100%;
+            margin-top: 10%;
             display: flex;
             align-items: center;
             padding-left: var(--dl-space-space-oneandhalfunits);
             padding-right: var(--dl-space-space-oneandhalfunits);
             flex-direction: column;
-            background-color: #151515;
+            background-image: radial-gradient(
+              circle at center,
+              rgba(250, 80, 0, 1.592) 0%,
+              rgba(0, 0, 0, 0.902) 42%
+            );
           }
           .home-header {
             gap: var(--dl-space-space-twounits);
