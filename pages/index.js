@@ -85,7 +85,12 @@ const Home = (props) => {
         <div className="home-video">
           <div className="home-container05">
             <button className="home-button3 start-button button">
-              <span className="home-text09">ENTER WHALEVERSE</span>
+              <a
+                href="https://whaleverse.boredwhalesyachtclub.org"
+                className="home-text09"
+              >
+                ENTER WHALEVERSE
+              </a>
             </button>
           </div>
         </div>
@@ -339,7 +344,6 @@ const Home = (props) => {
                 TRADE CARDS
               </span>
             </a>
-            
           </div>
 
           <div className="home-container12">
