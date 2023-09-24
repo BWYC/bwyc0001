@@ -53,36 +53,6 @@ const Home = (props) => {
               </div>
             </div>
           </div>
-          <a
-            href="https://gallery.boredwhalesyachtclub.org"
-            target="_blank"
-            rel="noreferrer noopener"
-            style={{
-              margin: "4%",
-              borderBottom: "solid",
-              borderColor: "white",
-              borderWidth: "1px",
-              padding: "1%",
-              borderRadius: "8px",
-              padding: "15px",
-              background: "gray",
-            }}
-          >
-            <span
-              className="home-text49"
-              style={{ alignContent: "center", display: "flex" }}
-            >
-              VIEW GALLERY V1.1
-            </span>
-          </a>
-          <hr
-            style={{
-              background: "white",
-              height: "1px",
-              color: "white",
-              width: "80%",
-            }}
-          />
           <p className="home-description">
             Cross-Chain NFT Community on EVM and BITCOIN as Ordinals. Members
             have access to Whaleverse. Mint Whalecards or #Whale NFT on
@@ -121,6 +91,28 @@ const Home = (props) => {
           </span>
         </a>
         <hr />
+        <a
+          href="https://gallery.boredwhalesyachtclub.org"
+          target="_blank"
+          rel="noreferrer noopener"
+          style={{
+            margin: "4%",
+            borderBottom: "solid",
+            borderColor: "white",
+            borderWidth: "1px",
+            padding: "1%",
+            borderRadius: "8px",
+            padding: "15px",
+            background: "gray",
+          }}
+        >
+          <span
+            className="home-text49"
+            style={{ alignContent: "center", display: "flex" }}
+          >
+            VIEW GALLERY V1.1
+          </span>
+        </a>
         <div className="home-video">
           <div className="home-container05">
             <button className="home-button3 start-button button">
@@ -300,31 +292,54 @@ const Home = (props) => {
             </span>
           </div>
           <div className="home-statistics">
-            <span className="home-text18">STATS</span>
+            <span className="home-text18">STATS | 10000</span>
             <div className="home-statistic-list">
               <div className="home-statistic">
                 <span className="home-sta">MINTED WHALES</span>
-                <span className="home-sta01">4,505</span>
+                <span className="home-sta01">
+                  4,516
+                  <br />
+                  ----- 10000
+                </span>
               </div>
               <div className="home-statistic1">
                 <span className="home-sta02">HOLDERS</span>
-                <span className="home-sta03">95</span>
+                <span className="home-sta03">
+                  101
+                  <br />
+                  ----- 10000
+                </span>
               </div>
               <div className="home-statistic2">
                 <span className="home-sta04">TRANSFERS</span>
-                <span className="home-sta05">9,876</span>
+                <span className="home-sta05">
+                  9,918 <br />
+                  ----- 10000
+                </span>
               </div>
               <div className="home-statistic3">
                 <span className="home-sta06">CLAIMED CARDS</span>
-                <span className="home-sta07">804</span>
+                <span className="home-sta07">
+                  808
+                  <br />
+                  ---- 10000
+                </span>
               </div>
               <div className="home-statistic4">
                 <span className="home-sta08">STAKED WHALES</span>
-                <span className="home-sta09">3,916</span>
+                <span className="home-sta09">
+                  3,916
+                  <br />
+                  ---- 10000
+                </span>
               </div>
               <div className="home-statistic5">
                 <span className="home-sta10">$WHLS HOLDERS</span>
-                <span className="home-sta11">69</span>
+                <span className="home-sta11">
+                  71
+                  <br />
+                  ---- 10000
+                </span>
               </div>
             </div>
             <a
@@ -348,14 +363,31 @@ const Home = (props) => {
                 VIEW ON CORESCAN
               </span>
             </a>
+            <hr
+              style={{
+                background: "gray",
+                height: "1px",
+                color: "white",
+                width: "80%",
+              }}
+            />
             <h2 style={{ color: "white", marginBottom: "5%" }}>WHALECARDS</h2>
+            <div className="home-container12">
+              <iframe
+                id="mint"
+                src="https://embed.ipfscdn.io/ipfs/bafybeihazpt6pkm4azgtupdz7hc2j3o4zpjsvtcgfq4t2keozxkss3ud6q/?contract=0x98E8B58c44e3c7f08171bb57aeD010fDF71B351E&amp;chain=%7B%22name%22%3A%22Core+Blockchain+Mainnet%22%2C%22chain%22%3A%22Core%22%2C%22rpc%22%3A%5B%22https%3A%2F%2Fcore-blockchain.rpc.thirdweb.com%2F%24%7BTHIRDWEB_API_KEY%7D%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22Core+Blockchain+Native+Token%22%2C%22symbol%22%3A%22CORE%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22core%22%2C%22chainId%22%3A1116%2C%22testnet%22%3Afalse%2C%22slug%22%3A%22core-blockchain%22%2C%22icon%22%3A%7B%22url%22%3A%22ipfs%3A%2F%2FQmeTQaBCkpbsxNNWTpoNrMsnwnAEf1wYTcn7CiiZGfUXD2%22%2C%22width%22%3A200%2C%22height%22%3A217%2C%22format%22%3A%22png%22%7D%7D&amp;clientId=678d5b0199cde588796872ea22804505&amp;theme=dark&amp;primaryColor=orange"
+                className="home-iframe"
+              ></iframe>
+            </div>
             <h6
               style={{
                 color: "grey",
+                gap: "5px",
                 fontSize: "18px",
                 fontFamily: "courier",
-                width: "60%",
+                width: "90%",
                 marginTop: "5",
+                fontStyle: "italic",
               }}
             >
               Whalecards are pass to WHALEVERSE [A GATED SERVER WITH EXCLUSIVE
@@ -383,15 +415,29 @@ const Home = (props) => {
                 TRADE CARDS
               </span>
             </a>
+            <hr />
+            <a
+              href="https://marketplace.boredwhalesyachtclub.org"
+              target="_blank"
+              rel="noreferrer noopener"
+              style={{
+                margin: "4%",
+                borderBottom: "solid",
+                borderColor: "white",
+                borderWidth: "1px",
+                padding: "1.5%",
+                borderRadius: "8px",
+              }}
+            >
+              <span
+                className="home-text49"
+                style={{ alignContent: "center", display: "flex" }}
+              >
+                STAKE CARDS
+              </span>
+            </a>
           </div>
 
-          <div className="home-container12">
-            <iframe
-              id="mint"
-              src="https://embed.ipfscdn.io/ipfs/bafybeihazpt6pkm4azgtupdz7hc2j3o4zpjsvtcgfq4t2keozxkss3ud6q/?contract=0x98E8B58c44e3c7f08171bb57aeD010fDF71B351E&amp;chain=%7B%22name%22%3A%22Core+Blockchain+Mainnet%22%2C%22chain%22%3A%22Core%22%2C%22rpc%22%3A%5B%22https%3A%2F%2Fcore-blockchain.rpc.thirdweb.com%2F%24%7BTHIRDWEB_API_KEY%7D%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22Core+Blockchain+Native+Token%22%2C%22symbol%22%3A%22CORE%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22core%22%2C%22chainId%22%3A1116%2C%22testnet%22%3Afalse%2C%22slug%22%3A%22core-blockchain%22%2C%22icon%22%3A%7B%22url%22%3A%22ipfs%3A%2F%2FQmeTQaBCkpbsxNNWTpoNrMsnwnAEf1wYTcn7CiiZGfUXD2%22%2C%22width%22%3A200%2C%22height%22%3A217%2C%22format%22%3A%22png%22%7D%7D&amp;clientId=678d5b0199cde588796872ea22804505&amp;theme=dark&amp;primaryColor=orange"
-              className="home-iframe"
-            ></iframe>
-          </div>
           <div className="home-client-list">
             <div id="roadmap" className="home-header6">
               <h2 className="home-title2 heading">ROADMAP</h2>
@@ -1395,7 +1441,7 @@ const Home = (props) => {
           }
           .home-sta01 {
             color: rgb(0, 4, 255);
-            font-size: 80px;
+            font-size: 60px;
             font-style: normal;
             font-family: PT Mono;
             font-weight: 500;
@@ -1421,7 +1467,7 @@ const Home = (props) => {
           }
           .home-sta03 {
             color: rgb(2, 255, 71);
-            font-size: 80px;
+            font-size: 60px;
             font-style: normal;
             font-family: PT Mono;
             font-weight: 500;
@@ -1447,7 +1493,7 @@ const Home = (props) => {
           }
           .home-sta05 {
             color: #ffbe00;
-            font-size: 80px;
+            font-size: 60px;
             font-style: normal;
             font-family: PT Mono;
             font-weight: 500;
@@ -1473,7 +1519,7 @@ const Home = (props) => {
           }
           .home-sta07 {
             color: #ff0004;
-            font-size: 80px;
+            font-size: 60px;
             font-style: normal;
             font-family: PT Mono;
             font-weight: 500;
@@ -1499,7 +1545,7 @@ const Home = (props) => {
           }
           .home-sta09 {
             color: #00ff29;
-            font-size: 80px;
+            font-size: 60px;
             font-style: normal;
             font-family: PT Mono;
             font-weight: 500;
@@ -1525,7 +1571,7 @@ const Home = (props) => {
           }
           .home-sta11 {
             color: #00ff29;
-            font-size: 80px;
+            font-size: 60px;
             font-style: normal;
             font-family: PT Mono;
             font-weight: 500;
