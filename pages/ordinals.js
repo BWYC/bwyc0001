@@ -1,12 +1,12 @@
-import React from 'react'
-import Head from 'next/head'
+import React from "react";
+import Head from "next/head";
 
 const Ordinals = (props) => {
   return (
     <>
       <div className="ordinals-container">
         <Head>
-          <title>Ordinals - bwyc</title>
+          <title>Ordinals | BWYC</title>
           <meta property="og:title" content="Ordinals - bwyc" />
         </Head>
       </div>
@@ -24,7 +24,7 @@ const Ordinals = (props) => {
         `}
       </style>
     </>
-  )
-}
+  );
+};
 
-export default Ordinals
+export default Ordinals;

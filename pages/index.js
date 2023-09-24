@@ -18,13 +18,12 @@ const Home = (props) => {
       <NavbarInteractive />
       <div className="home-container">
         <Head>
-          <title>bwyc</title>
+          <title>₿WYC</title>
           <meta property="og:title" content="bwyc" />
         </Head>
 
         <header className="home-hero">
           <div className="home-header">
-            <h1 className="home-title"></h1>
             <div className="home-container01">
               <div className="home-container02">
                 <div className="home-container03">
@@ -54,34 +53,74 @@ const Home = (props) => {
               </div>
             </div>
           </div>
-
+          <a
+            href="https://gallery.boredwhalesyachtclub.org"
+            target="_blank"
+            rel="noreferrer noopener"
+            style={{
+              margin: "4%",
+              borderBottom: "solid",
+              borderColor: "white",
+              borderWidth: "1px",
+              padding: "1%",
+              borderRadius: "8px",
+              padding: "15px",
+              background: "gray",
+            }}
+          >
+            <span
+              className="home-text49"
+              style={{ alignContent: "center", display: "flex" }}
+            >
+              VIEW GALLERY V1.1
+            </span>
+          </a>
+          <hr
+            style={{
+              background: "white",
+              height: "1px",
+              color: "white",
+              width: "80%",
+            }}
+          />
           <p className="home-description">
             Cross-Chain NFT Community on EVM and BITCOIN as Ordinals. Members
             have access to Whaleverse. Mint Whalecards or #Whale NFT on
             Youngparrot to join the club. 
           </p>
         </header>
+
+        <hr
+          style={{
+            background: "white",
+            height: "1px",
+            color: "white",
+            width: "80%",
+          }}
+        />
         <a
-          href="https://gallery.boredwhalesyachtclub.org"
+          href="https://bored-whales-yacht-club.gitbook.io/bwyc-whitepaper/"
           target="_blank"
           rel="noreferrer noopener"
           style={{
-            margin: "4%",
+            margin: "1%",
             borderBottom: "solid",
             borderColor: "white",
             borderWidth: "1px",
             padding: "1%",
             borderRadius: "8px",
             padding: "15px",
+            background: "gray",
           }}
         >
           <span
             className="home-text49"
             style={{ alignContent: "center", display: "flex" }}
           >
-            VIEW GALLERY
+            READ WHITEPAPER V1.1
           </span>
         </a>
+        <hr />
         <div className="home-video">
           <div className="home-container05">
             <button className="home-button3 start-button button">
@@ -514,7 +553,12 @@ const Home = (props) => {
                 </span>
               </div>
               <button className="home-button4 start-button button">
-                <span className="home-text49">ENTER WHALESVERSE</span>
+                <a
+                  href="whaleverse.boredwhalesyachtclub.org"
+                  className="home-text49"
+                >
+                  ENTER WHALESVERSE
+                </a>
               </button>
             </div>
             <div className="home-links2">
@@ -772,7 +816,7 @@ const Home = (props) => {
             flex-direction: column;
             background-image: radial-gradient(
               circle at center,
-              rgba(250, 80, 0, 1.592) 0%,
+              rgba(190, 10, 10, 5.592) 0%,
               rgba(0, 0, 0, 0.902) 42%
             );
           }
@@ -1963,6 +2007,8 @@ const Home = (props) => {
             width: 622px;
             height: 873px;
             object-fit: cover;
+            border-radius: 100px;
+            margin: 20px;
           }
           @media (max-width: 991px) {
             .home-navbar-interactive {
@@ -2681,6 +2727,7 @@ const Home = (props) => {
               width: 100%;
               height: 1006px;
               display: none;
+              border-radius: 100px;
             }
           }
           @media (max-width: 767px) {

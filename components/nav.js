@@ -589,7 +589,7 @@ const NavbarInteractive = (props) => {
 NavbarInteractive.defaultProps = {
   Logo_src: "/favicon-200h.png",
   Logo_alt: "image",
-  Company: "BWYC",
+  Company: "₿WYC",
   text: "HOME",
   text1: "WHALECARD",
   text2: "ORDINALS\n",
@@ -600,13 +600,14 @@ NavbarInteractive.defaultProps = {
   text5: "Start a project",
   Logo_src1: "/favicon-200h.png",
   Logo_alt1: "image",
-  Company1: "BWYC",
+  Company1: "₿WYC",
   text6: "🪸HOME",
   link_text: "/",
   text7: "🎴WHALECARDS",
   text8: "📌ROADMAP",
   text9: "🎭ORDINALS",
   text10: "CONNECT",
+  text10: "Whitepaper",
 };
 
 NavbarInteractive.propTypes = {
@@ -629,6 +630,7 @@ NavbarInteractive.propTypes = {
   text7: PropTypes.string,
   text8: PropTypes.string,
   text9: PropTypes.string,
+  text10: PropTypes.string,
   text10: PropTypes.string,
 };
 
