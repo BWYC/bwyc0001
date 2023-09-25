@@ -422,7 +422,7 @@ const Home = (props) => {
                 className="home-text49"
                 style={{ alignContent: "center", display: "flex" }}
               >
-                VIEW ON CORESCAN
+                VIEW ON CORESCAN🧾
               </span>
             </a>
             <hr
@@ -447,9 +447,12 @@ const Home = (props) => {
                 gap: "5px",
                 fontSize: "18px",
                 fontFamily: "courier",
-                width: "90%",
-                marginTop: "5",
+                width: "60%",
+                marginTop: "1%",
                 fontStyle: "italic",
+                border: "solid",
+                padding: "10px",
+                borderRadius: "10px",
               }}
             >
               Whalecards are pass to WHALEVERSE [A GATED SERVER WITH EXCLUSIVE
@@ -457,12 +460,13 @@ const Home = (props) => {
               them on our own marketplace. Cards have a supply of 1000 and can
               only be claimed 50 per address.
             </h6>
+            <hr />
             <a
               href="https://marketplace.boredwhalesyachtclub.org"
               target="_blank"
               rel="noreferrer noopener"
               style={{
-                margin: "4%",
+                margin: "1%",
                 borderBottom: "solid",
                 borderColor: "white",
                 borderWidth: "1px",
@@ -474,7 +478,7 @@ const Home = (props) => {
                 className="home-text49"
                 style={{ alignContent: "center", display: "flex" }}
               >
-                TRADE CARDS
+                TRADE CARDS💎
               </span>
             </a>
             <hr />
@@ -483,7 +487,7 @@ const Home = (props) => {
               target="_blank"
               rel="noreferrer noopener"
               style={{
-                margin: "4%",
+                margin: "1%",
                 borderBottom: "solid",
                 borderColor: "white",
                 borderWidth: "1px",
@@ -495,14 +499,14 @@ const Home = (props) => {
                 className="home-text49"
                 style={{ alignContent: "center", display: "flex" }}
               >
-                STAKE CARDS
+                STAKE CARDS🪙
               </span>
             </a>
           </div>
 
           <div className="home-client-list">
             <div id="roadmap" className="home-header6">
-              <h2 className="home-title2 heading">ROADMAP</h2>
+              <h2 className="home-title2 heading">ROADMAP📌</h2>
             </div>
             <div className="home-row">
               <span className="home-text20">2023 JULY</span>
