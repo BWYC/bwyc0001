@@ -175,6 +175,42 @@ const Home = (props) => {
             width: "80%",
           }}
         />
+        <a
+          href="https://whaleverse.boredwhalesyachtclub.org"
+          target="_blank"
+          rel="noreferrer noopener"
+          style={{
+            margin: "2%",
+            borderBottom: "solid",
+            borderColor: "white",
+            borderWidth: "1px",
+            padding: "1%",
+            borderRadius: "8px",
+            padding: "15px",
+            background: "gray",
+            fontFamily: "monospace",
+          }}
+        >
+          <span
+            className="home-text49"
+            style={{
+              alignItems: "center",
+              display: "flex",
+              width: "200px",
+              flexDirection: "column",
+            }}
+          >
+            BWYC DAO🌐
+          </span>
+        </a>
+        <hr
+          style={{
+            background: "white",
+            height: "1px",
+            background: "orange",
+            width: "80%",
+          }}
+        />
         <div className="home-video">
           <div className="home-container05">
             <button className="home-button3 start-button button">
