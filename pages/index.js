@@ -141,6 +141,7 @@ const Home = (props) => {
           }}
         />
         <a
+          href="https://arcade.boredwhalesyachtclub.org"
           target="_blank"
           rel="noreferrer noopener"
           style={{
