@@ -11,6 +11,27 @@ import {
 
 import Link from "../components/link";
 import NavbarInteractive from "../components/nav";
+import { motion } from "framer-motion";
+
+const container = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.3,
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const item = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
+};
 
 const Home = (props) => {
   return (
@@ -21,38 +42,30 @@ const Home = (props) => {
           <title>₿WYC</title>
           <meta property="og:title" content="bwyc" />
         </Head>
-
-        <header className="home-hero">
-          <div className="home-header">
-            <div className="home-container01">
-              <div className="home-container02">
-                <div className="home-container03">
-                  <img
-                    alt="image"
-                    src="/z%20(30)-200w.png"
-                    className="home-image1"
-                  />
-                  <img
-                    alt="image"
-                    src="/z%20(58)-300h.png"
-                    className="home-image2"
-                  />
-                </div>
-                <div className="home-container04">
-                  <img
-                    alt="image"
-                    src="/z%20(68)-200h.png"
-                    className="home-image3"
-                  />
-                  <img
-                    alt="image"
-                    src="/z%20(7)-200w.png"
-                    className="home-image4"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+        <hr />
+        <hr />
+        <hr />
+        <hr />
+        <motion.ul
+          className="container"
+          variants={container}
+          initial="hidden"
+          animate="visible"
+        >
+          {[0].map((index) => (
+            <motion.li key={index} className="item" variants={item} />
+          ))}
+          {[0].map((index) => (
+            <motion.li key={index} className="item1" variants={item} />
+          ))}
+          {[0].map((index) => (
+            <motion.li key={index} className="item2" variants={item} />
+          ))}
+          {[0].map((index) => (
+            <motion.li key={index} className="item3" variants={item} />
+          ))}
+        </motion.ul>
+        <header>
           <p className="home-description">
             Cross-Chain NFT Community on EVM and BITCOIN as Ordinals. Members
             have access to Whaleverse. Mint Whalecards or #Whale NFT on
@@ -3075,7 +3088,7 @@ const Home = (props) => {
               color: rgb(156, 156, 156);
               width: 322px;
               font-size: 18px;
-              margin-top: 166px;
+              margin-top: 36px;
               font-family: PT Mono;
               line-height: inherit;
               padding-left: 1px;
