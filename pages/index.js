@@ -35,7 +35,7 @@ const item = {
 
 const Home = (props) => {
   const { scrollYProgress } = useViewportScroll();
-  const scale = useTransform(scrollYProgress, [0, 1], [0.3, 5]);
+  const scale = useTransform(scrollYProgress, [0, 1], [0.4, 5]);
   return (
     <>
       <NavbarInteractive />
@@ -250,18 +250,25 @@ const Home = (props) => {
             }}
           />
         </motion.div>
-        <div className="home-video">
-          <div className="home-container05">
-            <button className="home-button3 start-button button">
-              <a
-                href="https://whaleverse.boredwhalesyachtclub.org"
-                className="home-text09"
-              >
-                ENTER WHALEVERSE
-              </a>
-            </button>
+        <motion.div
+          className="container2"
+          style={{
+            scale,
+          }}
+        >
+          <div className="home-video">
+            <div className="home-container05">
+              <button className="home-button3 start-button button">
+                <a
+                  href="https://whaleverse.boredwhalesyachtclub.org"
+                  className="home-text09"
+                >
+                  ENTER WHALEVERSE
+                </a>
+              </button>
+            </div>
           </div>
-        </div>
+        </motion.div>
         <div className="home-featured">
           <div className="home-header1">
             <h2 className="home-title1 heading">HOLDER PRIVILLAGES</h2>
@@ -334,6 +341,7 @@ const Home = (props) => {
                 </div>
               </div>
             </div>
+
             <div className="home-work1">
               <img alt="image" src="/wsrd-400w.png" className="home-image6" />
               <div className="home-details01">
