@@ -11,7 +11,7 @@ import {
 
 import Link from "../components/link";
 import NavbarInteractive from "../components/nav";
-import { motion } from "framer-motion";
+import { motion, useViewportScroll, useTransform } from "framer-motion";
 
 const container = {
   hidden: { opacity: 1, scale: 0 },
@@ -34,6 +34,8 @@ const item = {
 };
 
 const Home = (props) => {
+  const { scrollYProgress } = useViewportScroll();
+  const scale = useTransform(scrollYProgress, [0, 1], [0.3, 5]);
   return (
     <>
       <NavbarInteractive />
@@ -72,159 +74,182 @@ const Home = (props) => {
             Youngparrot to join the club. 
           </p>
         </header>
+        <motion.div
+          className="container2"
+          style={{
+            scale,
+          }}
+        >
+          <hr
+            style={{
+              background: "white",
+              height: "1px",
+              background: "orange",
+              width: "80%",
+            }}
+          />
 
-        <hr
+          <a
+            href="https://bored-whales-yacht-club.gitbook.io/bwyc-whitepaper/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <span
+              className="home-text49"
+              style={{
+                alignItems: "center",
+                display: "flex",
+                width: "100%",
+                flexDirection: "column",
+                fontSize: "26px",
+                fontFamily: "courier",
+                fontWeight: "900",
+              }}
+            >
+              READ WHITEPAPER V1.1📜
+            </span>
+          </a>
+
+          <hr
+            style={{
+              background: "white",
+              height: "1px",
+              background: "orange",
+              width: "80%",
+            }}
+          />
+        </motion.div>
+        <motion.div
+          className="container2"
           style={{
-            background: "white",
-            height: "1px",
-            background: "orange",
-            width: "80%",
-          }}
-        />
-        <a
-          href="https://bored-whales-yacht-club.gitbook.io/bwyc-whitepaper/"
-          target="_blank"
-          rel="noreferrer noopener"
-          style={{
-            margin: "2%",
-            borderBottom: "solid",
-            borderColor: "white",
-            borderWidth: "1px",
-            padding: "1%",
-            borderRadius: "8px",
-            padding: "15px",
-            background: "gray",
-            fontFamily: "monospace",
+            scale,
           }}
         >
-          <span
-            className="home-text49"
+          <hr
             style={{
-              alignSelf: "center",
-              display: "flex",
-              width: "100%",
-              flexDirection: "column",
+              background: "white",
+              height: "1px",
+              background: "orange",
+              width: "80%",
             }}
+          />
+          <a
+            href="https://gallery.boredwhalesyachtclub.org"
+            target="_blank"
+            rel="noreferrer noopener"
           >
-            READ WHITEPAPER V1.1📜
-          </span>
-        </a>
-        <hr
+            <span
+              className="home-text49"
+              style={{
+                alignItems: "center",
+                display: "flex",
+                width: "100%",
+                flexDirection: "column",
+                fontSize: "26px",
+                fontFamily: "courier",
+                fontWeight: "900",
+              }}
+            >
+              VIEW GALLERY V1.1🖼️
+            </span>
+          </a>
+
+          <hr
+            style={{
+              background: "white",
+              height: "1px",
+              background: "orange",
+              width: "80%",
+            }}
+          />
+        </motion.div>
+        <motion.div
+          className="container2"
           style={{
-            background: "white",
-            height: "1px",
-            background: "orange",
-            width: "80%",
-          }}
-        />
-        <a
-          href="https://gallery.boredwhalesyachtclub.org"
-          target="_blank"
-          rel="noreferrer noopener"
-          style={{
-            margin: "2%",
-            borderBottom: "solid",
-            borderColor: "white",
-            borderWidth: "1px",
-            padding: "1%",
-            borderRadius: "8px",
-            padding: "15px",
-            background: "gray",
-            fontFamily: "monospace",
+            scale,
           }}
         >
-          <span
-            className="home-text49"
-            style={{
-              alignItems: "center",
-              display: "flex",
-              width: "200px",
-              flexDirection: "column",
-            }}
+          <a
+            href="https://arcade.boredwhalesyachtclub.org"
+            target="_blank"
+            rel="noreferrer noopener"
           >
-            VIEW GALLERY V1.1🖼️
-          </span>
-        </a>
-        <hr
+            <hr
+              style={{
+                background: "white",
+                height: "1px",
+                background: "orange",
+                width: "80%",
+              }}
+            />
+            <span
+              className="home-text49"
+              style={{
+                alignItems: "center",
+                display: "flex",
+                width: "100%",
+                flexDirection: "column",
+                fontSize: "26px",
+                fontFamily: "courier",
+                fontWeight: "900",
+              }}
+            >
+              PLAY TO EARN🕹️
+            </span>
+          </a>
+          <hr
+            style={{
+              background: "white",
+              height: "1px",
+              background: "orange",
+              width: "80%",
+            }}
+          />
+        </motion.div>
+
+        <motion.div
+          className="container2"
           style={{
-            background: "white",
-            height: "1px",
-            background: "orange",
-            width: "80%",
-          }}
-        />
-        <a
-          href="https://arcade.boredwhalesyachtclub.org"
-          target="_blank"
-          rel="noreferrer noopener"
-          style={{
-            margin: "2%",
-            borderBottom: "solid",
-            borderColor: "white",
-            borderWidth: "1px",
-            padding: "1%",
-            borderRadius: "8px",
-            padding: "15px",
-            background: "gray",
-            fontFamily: "monospace",
+            scale,
           }}
         >
-          <span
-            className="home-text49"
+          <hr
             style={{
-              alignItems: "center",
-              display: "flex",
-              width: "200px",
-              flexDirection: "column",
+              background: "white",
+              height: "1px",
+              background: "orange",
+              width: "80%",
             }}
+          />
+          <a
+            href="https://whaleverse.boredwhalesyachtclub.org"
+            target="_blank"
+            rel="noreferrer noopener"
           >
-            PLAY TO EARN🕹️
-          </span>
-        </a>
-        <hr
-          style={{
-            background: "white",
-            height: "1px",
-            background: "orange",
-            width: "80%",
-          }}
-        />
-        <a
-          href="https://whaleverse.boredwhalesyachtclub.org"
-          target="_blank"
-          rel="noreferrer noopener"
-          style={{
-            margin: "2%",
-            borderBottom: "solid",
-            borderColor: "white",
-            borderWidth: "1px",
-            padding: "1%",
-            borderRadius: "8px",
-            padding: "15px",
-            background: "gray",
-            fontFamily: "monospace",
-          }}
-        >
-          <span
-            className="home-text49"
+            <span
+              className="home-text49"
+              style={{
+                alignItems: "center",
+                display: "flex",
+                width: "100%",
+                flexDirection: "column",
+                fontSize: "26px",
+                fontFamily: "courier",
+                fontWeight: "900",
+              }}
+            >
+              BWYC DAO🌐
+            </span>
+          </a>
+          <hr
             style={{
-              alignItems: "center",
-              display: "flex",
-              width: "200px",
-              flexDirection: "column",
+              background: "white",
+              height: "1px",
+              background: "orange",
+              width: "80%",
             }}
-          >
-            BWYC DAO🌐
-          </span>
-        </a>
-        <hr
-          style={{
-            background: "white",
-            height: "1px",
-            background: "orange",
-            width: "80%",
-          }}
-        />
+          />
+        </motion.div>
         <div className="home-video">
           <div className="home-container05">
             <button className="home-button3 start-button button">
