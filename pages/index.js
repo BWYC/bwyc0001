@@ -757,8 +757,18 @@ const Home = (props) => {
               </button>
             </div>
             <div className="home-links2">
-              <a href="https://discord.com/invite/E2XhP33u3f" className="home-social social">Discord</a>
-              <a href="https://twitter.com/bwycdinals" className="home-social1 social">Twitter</span>
+              <a
+                href="https://discord.com/invite/E2XhP33u3f"
+                className="home-social social"
+              >
+                Discord
+              </a>
+              <a
+                href="https://twitter.com/bwycdinals"
+                className="home-social1 social"
+              >
+                Twitter
+              </a>
             </div>
           </div>
           <img
