@@ -35,7 +35,7 @@ const item = {
 
 const Home = (props) => {
   const { scrollYProgress } = useViewportScroll();
-  const scale = useTransform(scrollYProgress, [0, 1], [0.4, 5]);
+  const scale = useTransform(scrollYProgress, [0, 1], [0.5, 5]);
   return (
     <>
       <NavbarInteractive />
@@ -106,7 +106,7 @@ const Home = (props) => {
                 fontWeight: "900",
               }}
             >
-              READ WHITEPAPER V1.1📜
+              WHITEPAPER V1.1📜
             </span>
           </a>
 
@@ -749,7 +749,7 @@ const Home = (props) => {
               </div>
               <button className="home-button4 start-button button">
                 <a
-                  href="whaleverse.boredwhalesyachtclub.org"
+                  href="https://whaleverse.boredwhalesyachtclub.org"
                   className="home-text49"
                 >
                   ENTER WHALESVERSE
@@ -757,8 +757,8 @@ const Home = (props) => {
               </button>
             </div>
             <div className="home-links2">
-              <span className="home-social social">Discord</span>
-              <span className="home-social1 social">Twitter</span>
+              <a href="https://discord.com/invite/E2XhP33u3f" className="home-social social">Discord</a>
+              <a href="https://twitter.com/bwycdinals" className="home-social1 social">Twitter</span>
             </div>
           </div>
           <img
