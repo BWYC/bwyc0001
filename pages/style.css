@@ -183,7 +183,7 @@
   }
 }
 .container {
-  width: 380px;
+  width: 350px;
   height: 450px;
   display: grid;
   margin-top: 20%;
@@ -248,13 +248,4 @@
   background: white;
   transform-origin: 50% 100%;
   box-shadow: "rgba(0, 240, 42, 0.951) 0px 8px 24px";
-}
-.body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
