@@ -80,15 +80,6 @@ const Home = (props) => {
             scale,
           }}
         >
-          <hr
-            style={{
-              background: "white",
-              height: "1px",
-              background: "orange",
-              width: "80%",
-            }}
-          />
-
           <a
             href="https://bored-whales-yacht-club.gitbook.io/bwyc-whitepaper/"
             target="_blank"
@@ -109,15 +100,6 @@ const Home = (props) => {
               WHITEPAPER V1.1📜
             </span>
           </a>
-
-          <hr
-            style={{
-              background: "white",
-              height: "1px",
-              background: "orange",
-              width: "80%",
-            }}
-          />
         </motion.div>
         <motion.div
           className="container2"
@@ -125,14 +107,6 @@ const Home = (props) => {
             scale,
           }}
         >
-          <hr
-            style={{
-              background: "white",
-              height: "1px",
-              background: "orange",
-              width: "80%",
-            }}
-          />
           <a
             href="https://gallery.boredwhalesyachtclub.org"
             target="_blank"
@@ -153,15 +127,6 @@ const Home = (props) => {
               VIEW GALLERY V1.1🖼️
             </span>
           </a>
-
-          <hr
-            style={{
-              background: "white",
-              height: "1px",
-              background: "orange",
-              width: "80%",
-            }}
-          />
         </motion.div>
         <motion.div
           className="container2"
@@ -174,14 +139,6 @@ const Home = (props) => {
             target="_blank"
             rel="noreferrer noopener"
           >
-            <hr
-              style={{
-                background: "white",
-                height: "1px",
-                background: "orange",
-                width: "80%",
-              }}
-            />
             <span
               className="home-text49"
               style={{
@@ -197,14 +154,6 @@ const Home = (props) => {
               PLAY TO EARN🕹️
             </span>
           </a>
-          <hr
-            style={{
-              background: "white",
-              height: "1px",
-              background: "orange",
-              width: "80%",
-            }}
-          />
         </motion.div>
 
         <motion.div
@@ -213,14 +162,6 @@ const Home = (props) => {
             scale,
           }}
         >
-          <hr
-            style={{
-              background: "white",
-              height: "1px",
-              background: "orange",
-              width: "80%",
-            }}
-          />
           <a
             href="https://whaleverse.boredwhalesyachtclub.org"
             target="_blank"
@@ -241,14 +182,6 @@ const Home = (props) => {
               BWYC DAO🌐
             </span>
           </a>
-          <hr
-            style={{
-              background: "white",
-              height: "1px",
-              background: "orange",
-              width: "80%",
-            }}
-          />
         </motion.div>
         <motion.div
           className="container2"
@@ -657,7 +590,7 @@ const Home = (props) => {
                 <div className="home-item5 service">
                   <div className="home-details08">
                     <span className="home-text32">CROSS-CHAINS</span>
-                    <span className="home-text33">
+                    <span className="home-text28">
                       5000 Whales will cross-chains to BNB chain, Holders on
                       CORE will be airdropped with burnable ERC115 token before
                       crossing chains. 
